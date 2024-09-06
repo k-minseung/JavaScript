@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- 버튼 모양만 만든상태 -->
+    <input type="button" value="버튼"><br>
+    <input type="button" value="감자">
+    <script>
+        // 어느 html요소를 적용시킬건지 먼저 선택을 해야함
+        let button = document.querySelectorAll('input');
+        // 버튼에 이벤트 만들기
+        // 선택요소.addEventListener(이벤트의 종류 , 이벤트가 발생했을 때의 기능);
+        // EventListener : 이벤트 감지기 이벤트 발생하면 작동
+        button[0].addEventListener('click',
+            function (e) {
+                alert('clicked!');
+            });
+        button[1].addEventListener('click',
+            function (e) {
+                alert('clicked!');
+            });
+    </script>
+</body>
+
+</html>
